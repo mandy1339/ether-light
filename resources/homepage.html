@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>EthLight</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" href="css/style.css"/> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/united/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/style2.css"/>
+    </head>
+    <body class="container">
+    </body>
+  <!--  HEADER  -->
+        <header id="header1" class="well page-header row">
+            <img class="alignright" src="media/images/NEURALUX-LOGO.png" width="80"/>
+            <div id="headerText">
+                <h1>ETHEREUM ALERT</h1>
+            </div>
+            <div style="clear: both;"></div>
+        </header>
+
+
+
+        <!--  MAIN  -->
+        <main>
+        <!--    CONTROL SECTION    -->
+        <section class="row ControlSection well" id="section1" style="text-align: center">
+
+            
+            <!--   1 <HEADINGS></HEADINGS> -->
+            <h3 class="col-md-2">SignalUnder</h3>
+            <h3 class="col-md-offset-3 col-md-2">CurrentValue</h3>
+            <h3 class="col-md-offset-3 col-md-2">SignalOver</h3>
+
+            
+            <div style="clear: both;"></div>
+            <br>
+
+
+            <!--   2  CURRENT VALUES/THRESHOLDS   -->
+            <div class="col-md-2" >$<span id="leftThreshold">0.00</span></div>
+            <div class="col-md-offset-3 col-md-2">$<span id="currentValue">0.00</span></div>
+            <div class="col-md-offset-3 col-md-2">$<span id="rightThreshold">1000.00</span></div>
+
+
+            <div style="clear: both;"></div>
+            <br>
+
+
+            <!--  3   UPDATERS/TEXTAREA-BUTTON    -->
+            <div class="col-md-2">
+                <textarea  id="leftTextArea" placeholder="$0.00"></textarea>
+            </div>
+            <div class="col-md-1 btn-div">
+                <button class="btn btn-secondary" id="leftUpdateButton">update</button>
+            </div>
+            <div class="col-md-offset-6 col-md-1 btn-div">
+                <button class="btn btn-secondary" id="rightUpdateButton">update</button>
+            </div>
+            <div class="col-md-2">
+                <textarea  id="rightTextArea" placeholder="$0.00"></textarea>
+            </div>
+
+        </section>
+
+        </main><!--  END-OF-MAIN  -->
+
+    <footer id="footer-scripts">
+        <script src="js/script1.js" type="text/javascript"></script>
+    </footer>
+</html>
